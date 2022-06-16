@@ -727,11 +727,13 @@ address {
 }
 
 .modal-title {
+    font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
-    letter-spacing: 1.15;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin-bottom: 12px;
 }
 
 .modal-form {
@@ -743,13 +745,18 @@ address {
     flex-direction: column;
 }
 
+.modal-input-container{
+    position: relative;
+}
+
 .modal-input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    position: relative;
     display: flex;
+    padding-left: 42px;
+    outline: none;
 }
 
 .modal-label {
@@ -766,26 +773,30 @@ address {
     max-width: 448px;
     min-height: 120px;
     resize: none;
+    outline: none;
 }
 
-.modal-icon-user{
+.modal-icon{
     position: absolute;
-    transform: translate(4px, 35px);
+    top: 50%;
+    left: 11px;
+    transform: translateY(-50%);
     color: black;
     fill: currentColor;
 }
-.modal-icon-phone{
-    position: absolute;
-    transform: translate(4px, 35px);
-    color: black;
-    fill: currentColor;
+
+#textarea:hover, 
+#textarea:focus, 
+.modal-input:hover,
+.modal-input:focus{
+    border-color: var(--accent-color);
 }
-.modal-icon-email{
-    position: absolute;
-    transform: translate(4px, 35px);
-    color: black;
-    fill: currentColor;
+
+.modal-input-container .modal-icon:hover{
+    color: red;
 }
+
+
 
 /* checkbox  */
 
