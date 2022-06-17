@@ -145,7 +145,8 @@ img {
     transition: var(--transition-color);
 }
 
-.list-link:hover::after {
+.list-link:hover::after
+.list-link:focus::after {
     background: var(--accent-color);
 }
 
@@ -807,7 +808,8 @@ address {
     cursor: pointer;
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
     fill: var(--accent-color);
 }
 
