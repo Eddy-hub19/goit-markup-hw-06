@@ -926,11 +926,13 @@ address {
     width: 16px;
     height: 15px;
     align-items: center;
+    color: white;
     justify-content: center;
     margin-right: 7px;
     border: 2px solid #212121;
     border-radius: 2px;
     transition: var(--transition-color), var(--transition-border), var(--transition-bg);
+    fill: currentColor;
 }
 
 .modal-checkbox:checked+.modal-check-label>.modal-check-icon {
