@@ -1,5 +1,4 @@
-:root {
-    --white-color: #ffff;
+:root {    --white-color: #ffff;
     --primary-color: #757575;
     --primary-bg-color: #2F303A;
     --title-text-color: #212121;
@@ -15,6 +14,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.no-scroll{
+    overflow-y: hidden;
 }
 
 p,
