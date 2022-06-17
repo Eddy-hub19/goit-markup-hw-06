@@ -841,11 +841,11 @@ address {
     margin-right: 7px;
     border: 2px solid #212121;
     border-radius: 2px;
-    transition: var(--transition-color), var(--transition-border), var(--transition-fill);
+    transition: var(--transition-color), var(--transition-border),var(--transition-bg);
 }
 
-.modal-checkbox:checked .modal-check-label > .modal-check-icon {
-    background-color: var(--accent-color);
+.modal-checkbox:checked + .modal-check-label >  .modal-check-icon {
+    background: var(--accent-color);
     border: none;
 }
 
