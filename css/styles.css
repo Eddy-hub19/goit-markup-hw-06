@@ -1,4 +1,5 @@
-:root {    --white-color: #ffff;
+:root {
+    --white-color: #ffff;
     --primary-color: #757575;
     --primary-bg-color: #2F303A;
     --title-text-color: #212121;
@@ -16,7 +17,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.no-scroll{
+.no-scroll {
     overflow-y: hidden;
 }
 
@@ -555,6 +556,84 @@ address {
     background: var(--accent-color);
 }
 
+/* footer-form */
+
+.footer-form-wrapper {
+    margin-left: 93px;
+    margin-top: 12px;
+}
+
+.footer-form{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer-form-title {
+    font-size: 14px;
+    line-height: 1.45;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.footer-form-input {
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 12px;
+}
+
+.footer-email{
+    display: flex;
+}
+
+.footer-form-button {
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-bg),var(--transition-color);
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus{
+    background-color: #188ce8;
+}
+
+.icon-send{
+    margin-left: 10px;
+    fill: currentColor;
+}
+
 /* portfolio */
 
 .main-filter {
@@ -674,7 +753,7 @@ address {
     margin-top: 4px;
 }
 
-/* Pop Up  */
+/* modal  */
 
 .backdrop {
     width: 100vw;
@@ -787,6 +866,7 @@ address {
     resize: none;
     outline: none;
     padding: 16px 12px;
+    margin-bottom: 20px;
     transition: var(--transition-border);
 }
 
@@ -810,7 +890,6 @@ address {
     color: var(--accent-color);
 }
 
-
 /* checkbox  */
 
 .checkbox-wrap {
@@ -818,7 +897,7 @@ address {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .modal-check-label {
@@ -841,10 +920,10 @@ address {
     margin-right: 7px;
     border: 2px solid #212121;
     border-radius: 2px;
-    transition: var(--transition-color), var(--transition-border),var(--transition-bg);
+    transition: var(--transition-color), var(--transition-border), var(--transition-bg);
 }
 
-.modal-checkbox:checked + .modal-check-label >  .modal-check-icon {
+.modal-checkbox:checked+.modal-check-label>.modal-check-icon {
     background: var(--accent-color);
     border: none;
 }
@@ -882,4 +961,9 @@ address {
     margin-right: auto;
     cursor: pointer;
     transition: var(--transition-bg), var(--transition-color);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
