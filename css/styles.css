@@ -514,11 +514,11 @@ address {
 
 .footer-wrap {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-soc-links {
     margin-left: 70px;
-    margin-top: 12px;
 }
 
 .soc-link-title {
@@ -561,7 +561,6 @@ address {
 
 .footer-form-wrapper {
     margin-left: 93px;
-    margin-top: 12px;
 }
 
 .footer-form{
@@ -878,7 +877,6 @@ address {
     resize: none;
     outline: none;
     padding: 16px 12px;
-    margin-bottom: 20px;
     transition: var(--transition-border);
 }
 
@@ -957,7 +955,6 @@ address {
 }
 
 .modal-form-btn {
-    margin-top: 30px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
